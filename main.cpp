@@ -14,11 +14,11 @@ int main()
     printf("%s\n", "Hola! Somos Gonzalo y Gustavo!!");
 
     while (true) { // Loop infinito en donde leo constantemente la entrada digital definida como gasDetector
-        if ( gasDetector == ON ) {
-            alarmLed = ON;
+        if ( gasDetector == ON ) { // Si detecto que esta presionado el pulsador (se activo el detector de gas)
+            alarmLed = ON;         // Prendo la alarma (LED)
         }
         
-        if ( gasDetector == OFF ) {
+        if ( gasDetector == OFF ) { // Si detecto que esta NO presionado el pulsador (NO se activo el detector de gas)
             alarmLed = OFF;
         }
     }
