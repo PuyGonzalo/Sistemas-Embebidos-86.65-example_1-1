@@ -4,9 +4,9 @@
 int main()
 {
     // Inicializaciones
-    DigitalIn gasDetector(D2); // Inicializa el pin D2 como un Digital input
+    DigitalIn gasDetector(D2); // Inicializa el GPIO correspondiente a D2 (de la placa de desarrollo) como un Digital input
 
-    DigitalOut alarmLed(LED1); // Inicializa el LED1 como un Digital output.
+    DigitalOut alarmLed(LED1); // Inicializa el GPIO correspondiente al LED1 (de la placa de desarrollo) como un Digital output.
 
     gasDetector.mode(PullDown); // Setea el pin D2 (digital input) en modo Pull Down. En este ejemplo se utiliza un switch conectado al pin D2.
                                 // De esta forma, sabemos que el estado logico del pin sera LOW (0 V) y que cuando se presione el swtich se pasara a un estado HIGH (en este caso 3,3 V)
